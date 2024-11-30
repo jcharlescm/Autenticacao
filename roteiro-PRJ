@@ -1,0 +1,37 @@
+1ª - Dentro do terrminal Studio Visial code
+	* Só a primeira vez para criar o arquivo venv
+		> python -m venv venv			== instalar o arquivo venv
+
+> venv\Scripts\activate
+
+Criar o arquivo requirements.txt
+> pip install -r requirements.txt
+
+instalar e ver a versão do django
+> pip install django
+> python -m django --version
+
+ver a versão do python e do Django
+> python --version
+> python -m django --version
+
+Instalam graficos do Django
+> python -m pip install Pillow
+
+--------------------------------------------------
+
+Criar uma pasta no VSCode para o projeto
+- no terminal > cd nome da pasta criada
+- criar nova pasta dentro da pasta(projeto_cad_usuarios) do prj e uma subpasta com o mesmo nome
+> django-admin startproject projeto_exemplo
+
+- criar nova pasta dentro da pasta(projeto_cad_usuarios) do prj e uma subpasta com o mesmo nome
+USAR ESSE
+> django-admin startproject projeto_exemplo .     -- Cria sem a estrutura de pastas
+
+Criar aplicativo para cadastro dos usuarios
+> django-admin startapp app_usuarios
+
+
+
+
