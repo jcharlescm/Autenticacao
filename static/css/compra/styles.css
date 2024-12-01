@@ -1,0 +1,30 @@
+
+.forms-color-z {
+    background-color: #FC009C;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.bgcolor-zeus {
+    background-color: #FC009C;
+}
+
+.custom-margin-top-botton {
+    margin-top: auto; 
+    margin-bottom: auto;
+}
+
+.custom-padding-10px {
+    padding: 10px;
+}
+
+.custom-padding10-radius8 {
+    padding: 10px; 
+    border-radius: 8px;
+}
+
+.custom-msg-z {
+    font-size: 35px;
+    letter-spacing: 1px; 
+    color: #111111;
+}

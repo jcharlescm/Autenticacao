@@ -1,21 +1,60 @@
+{% load static %}
 <html>
     <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Django Ecommerce - J2CM</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <!-- Bootstrap icons -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!--  Core theme CSS (includes Bootstrap)  --> 
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}"> 
+        <link rel="stylesheet" href="{% static 'css/compra/styles.css' %}"> 
     </head>
 
     <body>
-        <center>
-        <h1> CADASTRO DE USUÁRIOS </h1>
-        <form action="{% url 'cadastro' %}" method="POST"> 
-            {% csrf_token %}
-            <input type="text" placeholder="Username..." name="username">
-            <br><br>
-            <input type="email" placeholder="Email..." name="email">
-            <br><br>
-            <input type="password" placeholder="Senha..." name="senha">
-            <br><br>
-            <input type="submit" value="Cadastrar">
-        </form>
-        </center>
+        <div class="container"></div>
+            <div class="box-form" style="background-color: #FC009C; padding: 12px; border-radius: 8px;">
+
+                <h1 style="color: white;"> CADASTRO DE USUÁRIO </h1>
+
+                <div class="box-form" style="background-color: #f7f2f5; padding: 12px; border-radius: 8px;">
+
+                    <form action="{% url 'cadastro' %}" method="POST"> 
+                        {% csrf_token %}
+
+                        <div class="mb-3">
+                            <label for="username">Nome</label>
+                            <input type="text" class="form-control search_input1" name="username" id="username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control search_input1" name="email" id="email">
+                        </div>                           
+                        <div class="mb-3">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control search_input1" name="senha" id="senha">
+                        </div>
+                        <br>
+                        
+
+                        <button type="submit" class="btn btn-block logocab"
+                        style="font-size: 22px; background-color: #FC009C; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); letter-spacing: 1px; color: aliceblue;"
+                        href="/monteseucomputador/" role="button">Cadastrar</button>
+                        <br> 
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
     </body>
 </html>
