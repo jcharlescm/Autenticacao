@@ -1,3 +1,45 @@
+IMPLEMENTANDO FUNCIONALIDADE DE "TROCA DE SENHA" (PYTHON/DJANGO)
+https://www.youtube.com/watch?v=JrNMBj12H4Y&t=280s
+
+	ROTAS A SEREM EMPLEMENTADAS
+	auth_views.Password
+
+
+	Alteração de senha
+	Por favor, digite sua senha antiga, por motivos de segurança, e depois digite sua nova senha duas vezes para que possamos verificar se você a digitou corretamente.
+
+	Sua senha não pode ser muito parecida com suas outras informações pessoais.
+	Sua senha deve conter pelo menos 8 caracteres.
+	Sua senha não pode ser uma senha comumente usada.
+	Sua senha não pode ser totalmente numérica.
+
+	Confirmação de nova senha:
+	Digite a mesma senha de antes, para verificação.
+
+IMPLEMENTANDO "ESQUECI/RESETAR SENHA" (PYTHON/DJANGO)
+https://www.youtube.com/watch?v=lVbozsNX9ow
+
+	ROTAS A SEREM EMPLEMENTADAS
+	auth_views.PasswordReset
+	auth_views.PasswordResetDoneView ==> link por email(token)	
+	auth_views.PasswordResetConfirmView  ==> Formulario de troca de senha(senha + confirm senha)
+	auth_views.PasswordREsetCompleteView
+
+
+GITHUB do Projeto - Clonar
+https://github.com/JCharlesCM-hub/Autenticacao.git
+
+
+Templates
+cadastro.html
+	nome, email, senha
+
+login 
+	nome, senha
+
+
+
+
 1ª - Dentro do terrminal Studio Visial code
 	* Só a primeira vez para criar o arquivo venv
 		> python -m venv venv			== instalar o arquivo venv

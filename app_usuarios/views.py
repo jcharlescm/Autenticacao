@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as login_django
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import views as auth_views
 
 # Create your views here.
 def cadastro(request):
@@ -38,7 +39,12 @@ def login(request):
             login_django(request, user)
             return HttpResponse('Autenticado.')
         else:
-            return HttpResponse('Email ou Senha inválido..')
+            return HttpResponse('Nome ou Senha inválido..')
+        
+        
+class PasswordChangeView(auth_views.PasswordChangeView):
+    success_url = '/sucesso/'  # Página de sucesso após a troca de senha
+
 
 @login_required(login_url="/auth/login")
 def plataforma(request):

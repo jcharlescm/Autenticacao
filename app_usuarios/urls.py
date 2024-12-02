@@ -1,5 +1,8 @@
+from django.contrib.auth import views as auth_views
 from django.urls import path
 from . import views
+
+# app_name = "accounts"
 
 urlpatterns = [
     # http://127.0.0.1:8000/auth/cadastro/
@@ -8,4 +11,7 @@ urlpatterns = [
     path('login/', views.login, name='login'),
     # http://127.0.0.1:8000/auth/plataforma     --->> sem barra
     path('plataforma', views.plataforma, name='plataforma'),
+    
+    path('password_change/', auth_views.PasswordChangeView.as_view(success_url='password_change_done'), name='password_change'),
+    path('password_change_done', auth_views.PasswordChangeDoneView.as_view(), name='password_change_done'),    
 ]

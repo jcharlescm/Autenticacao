@@ -4,5 +4,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('auth/', include('app_usuarios.urls'))
+    path('auth/', include('app_usuarios.urls')),
 ]
